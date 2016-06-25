@@ -10,11 +10,12 @@
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <VariableSizedWrapGrid Background="White" MaximumRowsOrColumns="2" Grid.Row="0">
+        <VariableSizedWrapGrid Background="White" MaximumRowsOrColumns="2" Grid.Row="0" Margin="0,0,10,0.333">
             <Button Content="button1" Width="150" Height="120" />
             <Button Content="button2" Width="150" Height="120" />
             <Button Content="button3" Width="150" Height="120" />
@@ -27,5 +28,11 @@
             <Rectangle Fill="LightGreen" Width="60" />
             <Rectangle Fill="LightPink" Width="60" />
         </StackPanel>
+        <RelativePanel Background="White" Grid.Row="2">
+
+            <Button x:Name="button1" Content="button1" RelativePanel.AlignHorizontalCenterWithPanel="True" Background="Red" />
+            <Button x:Name="button2" Content="button2" RelativePanel.Below="button1" RelativePanel.AlignHorizontalCenterWithPanel="True" Background="Yellow" />
+            <Button x:Name="button3" Content="button3" RelativePanel.Below="button2" RelativePanel.AlignHorizontalCenterWithPanel="True" Background="Green" />
+        </RelativePanel>
     </Grid>
 </Page>
