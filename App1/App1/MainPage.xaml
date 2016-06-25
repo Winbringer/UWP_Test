@@ -7,8 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button" Content="Кнопка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,272,0,0" RenderTransformOrigin="3.142,6.134"/>
-
+    <Grid x:Name="layoutGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="button" Content="Кнопка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,272,0,0" RenderTransformOrigin="3.142,6.134" Click="button_Click"/>
+        <Button x:Name="messageButton" Width="250" Height="40" HorizontalAlignment="Center">
+            <Button.Content>
+                <local:Phone Name="Lumia 950" Price="700" />
+            </Button.Content>
+        </Button>
+        <Button x:Name="messageButton1" Width="120" Height="40" Content="Кнопка">
+            <Button.HorizontalAlignment>
+                <HorizontalAlignment>Center</HorizontalAlignment>
+            </Button.HorizontalAlignment>
+            <Button.Background>
+                <SolidColorBrush Opacity="0.5" Color="Red" />
+            </Button.Background>
+        </Button>
     </Grid>
 </Page>
