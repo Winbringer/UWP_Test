@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="App5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center">
+            <CalendarView x:Name="calendarView" SelectionMode="Multiple" SelectedBorderBrush="Red"
+        SelectedForeground="LightPink"  SelectedDatesChanged="CalendarView_SelectedDatesChanged" />
+            <TextBlock x:Name="textBlock1" />
+        </StackPanel>
+        <Button Content="Жми">
+            <Button.Flyout>
+                <MenuFlyout Placement="Bottom">
+                    <MenuFlyoutSubItem Text="Проект">
+                        <MenuFlyoutItem Text="Создать" />
+                        <MenuFlyoutItem Text="Открыть" />
+                    </MenuFlyoutSubItem>
+                    <MenuFlyoutItem Text="Правка" />
+                    <MenuFlyoutSeparator />
+                    <ToggleMenuFlyoutItem IsChecked="True" Text="Сохранить" />
+                    <MenuFlyoutItem Text="Выход" Click="Exit_Click" />
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
+    </Grid>
+</Page>
