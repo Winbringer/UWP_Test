@@ -10,10 +10,14 @@
         <CommandBar>
             <CommandBar.Content>
                 <StackPanel Orientation="Horizontal">
+                    <AppBarSeparator></AppBarSeparator>
                     <TextBlock x:Name="nameM"></TextBlock>
+                    <AppBarSeparator></AppBarSeparator>
                     <TextBlock x:Name="albumM"></TextBlock>
+                    <AppBarSeparator></AppBarSeparator>
                     <TextBlock x:Name="autorM"></TextBlock>
-                </StackPanel>
+                    <AppBarSeparator></AppBarSeparator>
+                </StackPanel>               
             </CommandBar.Content>
         </CommandBar>
     </Page.TopAppBar>
