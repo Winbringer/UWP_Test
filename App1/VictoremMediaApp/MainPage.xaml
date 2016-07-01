@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="VictoremMediaApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VictoremMediaApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" >
+    <Page.TopAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock x:Name="nameM"></TextBlock>
+                    <TextBlock x:Name="albumM"></TextBlock>
+                    <TextBlock x:Name="autorM"></TextBlock>
+                </StackPanel>
+            </CommandBar.Content>
+        </CommandBar>
+    </Page.TopAppBar>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarSeparator></AppBarSeparator>
+            <AppBarButton x:Name="prevButton" Icon="Previous" Label="Назад" Click="prevButton_Click" />
+            <AppBarSeparator></AppBarSeparator>
+            <AppBarButton x:Name="nextButton" Icon="Next" Label="Вперед" Click="nextButton_Click" />
+            <AppBarSeparator></AppBarSeparator>
+            <AppBarButton x:Name="openButton" Label="Открыть" Icon="OpenFile" Click="openButton_Click"  />
+            <AppBarSeparator></AppBarSeparator>
+            <AppBarButton x:Name="deleteButton" Icon="Delete" Label="Удалить проигрываемый файл с диска" Click="deleteButton_Click"/>
+            <AppBarSeparator></AppBarSeparator>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <MediaElement x:Name="media" AutoPlay="True" AreTransportControlsEnabled="True" CurrentStateChanged="media_CurrentStateChanged"
+         />
+    </Grid>
+</Page>
+<!--AreTransportControlsEnabled="True"--> 
