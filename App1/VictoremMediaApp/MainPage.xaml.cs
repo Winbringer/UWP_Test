@@ -141,6 +141,7 @@ namespace VictoremMediaApp
                         nameM.Text = $"Title - {f?.Title} : {f?.Subtitle}";
                         autorM.Text = "Artist - " + f?.Artist + " : " + (f != null && f.Writers != null && f.Writers.Count > 0 ? f.Writers[0] : "") + " Файлов в плейлисте: " + files.Count;
                         albumM.Text = "Album - " + f?.Album;
+                        nuberM.Text = currentFile.ToString();
                         media.SetSource(stream, files[currentFile].ContentType);
                         media.Play();
                     }

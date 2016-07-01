@@ -17,6 +17,8 @@
                     <AppBarSeparator></AppBarSeparator>
                     <TextBlock x:Name="autorM"></TextBlock>
                     <AppBarSeparator></AppBarSeparator>
+                    <TextBlock x:Name="nuberM"></TextBlock>
+                    <AppBarSeparator></AppBarSeparator>
                 </StackPanel>               
             </CommandBar.Content>
         </CommandBar>
