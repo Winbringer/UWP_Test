@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,18 @@ namespace App2
         public MainPage()
         {
             this.InitializeComponent();
+            this.Loaded += OnLoaded;         
+        }
+
+        private void OnLoaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var a = ApplicationData.Current.LocalFolder;
+            await new Windows.UI.Popups.MessageDialog(a.Path).ShowAsync();//Windows.ApplicationModel.Package.Current.InstalledLocation.Path).ShowAsync();
         }
     }
 }

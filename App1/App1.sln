@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRuntimeComponent", "MyRun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundTaskApp", "BackgroundTaskApp\BackgroundTaskApp.csproj", "{8E965218-AF34-40C1-8512-9A3B05B28973}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App10", "App10\App10.csproj", "{454BF490-139E-43D8-851C-BC7DF08D58E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -293,6 +295,26 @@ Global
 		{8E965218-AF34-40C1-8512-9A3B05B28973}.Release|x86.ActiveCfg = Release|x86
 		{8E965218-AF34-40C1-8512-9A3B05B28973}.Release|x86.Build.0 = Release|x86
 		{8E965218-AF34-40C1-8512-9A3B05B28973}.Release|x86.Deploy.0 = Release|x86
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Debug|ARM.ActiveCfg = Debug|ARM
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Debug|ARM.Build.0 = Debug|ARM
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Debug|ARM.Deploy.0 = Debug|ARM
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Debug|x64.ActiveCfg = Debug|x64
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Debug|x64.Build.0 = Debug|x64
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Debug|x64.Deploy.0 = Debug|x64
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Debug|x86.ActiveCfg = Debug|x86
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Debug|x86.Build.0 = Debug|x86
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Debug|x86.Deploy.0 = Debug|x86
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Release|Any CPU.ActiveCfg = Release|x86
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Release|ARM.ActiveCfg = Release|ARM
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Release|ARM.Build.0 = Release|ARM
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Release|ARM.Deploy.0 = Release|ARM
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Release|x64.ActiveCfg = Release|x64
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Release|x64.Build.0 = Release|x64
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Release|x64.Deploy.0 = Release|x64
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Release|x86.ActiveCfg = Release|x86
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Release|x86.Build.0 = Release|x86
+		{454BF490-139E-43D8-851C-BC7DF08D58E4}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

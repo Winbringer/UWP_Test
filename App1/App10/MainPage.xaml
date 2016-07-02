@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="App10.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App10"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Name="phonesListButton" Label="Телефоны" Icon="PhoneBook" Click="PhonesList_Click" />
+            <AppBarButton x:Name="saveButton" Label="Добавить" Icon="Add" Click="Add_Click" />
+            <AppBarButton x:Name="editButton" Label="Изменить" Icon="Edit" Click="Edit_Click" />
+            <AppBarButton x:Name="deleteButton" Label="Удалить" Icon="Delete" Click="Delete_Click" />
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListView x:Name="companiesList">
+            <ListView.ItemTemplate>
+                <DataTemplate  x:DataType="local:Company">
+                    <StackPanel>
+                        <TextBlock Text="{Binding Name}"  FontSize="26" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>
