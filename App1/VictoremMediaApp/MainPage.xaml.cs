@@ -32,7 +32,7 @@ namespace VictoremMediaApp
         {
             this.InitializeComponent();
             this.Loaded += MainPage_Loaded;
-            this.media.AudioCategory = AudioCategory.GameMedia;
+            this.media.AudioCategory = AudioCategory.Media;
             media.MediaEnded += On_MediaEnded;
         }
 
@@ -120,9 +120,10 @@ namespace VictoremMediaApp
                     await files[currentFile].DeleteAsync();
                     files.RemoveAt(currentFile);
                     await PlayCurrent();
+                    var d = new Windows.UI.Popups.MessageDialog("Файл удален.");
+                    await d.ShowAsync();
                 }
-                var d = new Windows.UI.Popups.MessageDialog("Файл удален.");
-                await d.ShowAsync();
+              
             }
         }
 
